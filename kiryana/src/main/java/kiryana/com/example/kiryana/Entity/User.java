@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
     private String username;
     private String password;
     private String email;
