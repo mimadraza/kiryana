@@ -1,7 +1,7 @@
 package kiryana.com.example.kiryana.Entity;
 
-import org.hibernate.annotations.ManyToAny;
 
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -22,5 +22,5 @@ public class Store {
     private String category;
 
     @ManyToOne
-    private User owner;
+    private Customer owner;
 }

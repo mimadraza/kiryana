@@ -24,7 +24,7 @@ public class Order {
     private String status;
 
     @ManyToOne
-    private User customer;
+    private Customer customer;
 
     @ManyToOne
     private Store store;
