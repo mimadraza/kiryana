@@ -3,7 +3,7 @@ package kiryana.com.example.kiryana.Entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -20,6 +20,6 @@ public class Item
     private Double price;
     private String imageUrl;
 
-    @ManyToMany
+    @ManyToOne
     private Store store;
 }

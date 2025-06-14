@@ -21,6 +21,6 @@ public class Store {
     private double latitude;
     private String category;
 
-    @ManyToAny
+    @ManyToOne
     private User owner;
 }
